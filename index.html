@@ -4,18 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="txt/css" href="style.css"> 
     <title>CV</title>
 </head>
+<style>.nombre{
+    color: rgb(0, 0, 255);
+    font-style:oblique;
+}
+
+#InfoPersonal{
+    background-color: gray;
+    border: solid rgb(3, 104, 255);
+    border-width: .2cm;
+    columns: 4;
+}
+nav{
+    padding: 1cm;
+}
+#datos{
+    text-align: center;
+    border-style: groove;
+    font-weight: 200;
+    border-color:brown;
+    border-width: .3cm;
+}
+
+#Experiencia{
+    text-align: left;
+}
+#Habilidades{
+    text-align: right;
+}
+
+footer{
+    opacity: 100;
+    text-align: center;
+}
+nav {
+    text-align: center;
+}
+</style>
 
 <body>
     <header> 
         
-        <h1 style="text-align:center ">Jesús Roberto Herrera Vieyra</h1>
+        <h1 class="nombre" style="text-align:center ">Jesús Roberto Herrera Vieyra</h1>
         <h4 style="text-align: center">ESTUDIANTE DE 9NO SEMESTRE
             EN INGENIERÍA EN SISTEMAS DIGITALES Y ROBÓTICA</h4>
          
             <center><img src="./pp.jpg" width="220"></center>
-                <address style="text-align: center;">
+                <address id="datos" style="text-align: center;">
                     Contacto<br>
 
                     <a href="mailto: beto_herrera@99hotmail.com">beto_herrera99@hotmail.com</a><br>
@@ -23,12 +61,12 @@
                     CDMX<br>
                     
                 </address>
-                <nav style="text-align: center;">
-                    <a href="#InfoPersonal" style="margin-right: 20px;">Información Personal</a>
-                    <a href="#Habilidades" style="margin-right: 20px;">Habilidades</a>
-                    <a href="#Experiencia" style="margin-right: 20px;">Experiencia</a>
-                    <a href="#Educacion" style="margin-right: 20px;">Educación</a>
-                    <a href="#Idiomas" style="margin-right: 20px;">Idiomas</a>
+                <nav>
+                    <a href="#InfoPersonal" >Información Personal</a>
+                    <a href="#Habilidades" >Habilidades</a>
+                    <a href="#Experiencia" >Experiencia</a>
+                    <a href="#Educacion" >Educación</a>
+                    <a href="#Idiomas" >Idiomas</a>
 
             </nav>
     </header>
@@ -43,7 +81,7 @@
 
     <section>
         <div id="Habilidades">
-            <h3 style="font-weight: 600;">Habilidades</h3>
+            <h3>Habilidades</h3>
             
                 <p>
                     Buen manejo de situaciones bajo presión. Práctica del baloncesto desde de la infancia, jugando para la selección del IPN y representando al ITESM CEM en torneos intercampus.
@@ -78,7 +116,7 @@
     </main>
     <section>
         <div id="Educacion">
-            <h3 style="font-weight: 600;">Educación</h3>
+            <h3>Educación</h3>
             
                 <ul>
                     <b>ITESM CEM</b>
@@ -89,7 +127,7 @@
     </section>
     <section>
         <div id="Idiomas">
-            <h3 style="font-weight: 600;">Idiomas</h3>
+            <h3>Idiomas</h3>
             
                 <li>Inglés C1 - FCE A+</li>
                 <li>Alemán: ÖSD B1 (Sprechen, Mündlichen und Schreiben)</li>
@@ -99,7 +137,7 @@
             
     <footer>
         
-        <div style="text-align: center;">
+        <div>
             <br><br>
             <span>Elaborado para la materia de Desarrollo Web Verano 2022</span>
             <br><br>
